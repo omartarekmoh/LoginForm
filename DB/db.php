@@ -28,4 +28,11 @@
     return $data;
   }
 
+  function get_rows($query)
+  {
+    $result = run_query($query);
+    $num = mysqli_num_rows($result);
+    return $num;    
+  }
+
   
